@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Регистрация</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <!--
@@ -12,105 +12,80 @@
     <script type="module" src="script.js"></script>
   </head>
   <body>
-      <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+    <nav>
+      <a href="/" aria-current="page">Регистрация</a>
+      <a href="/page2.html">Вход</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <h1>Онлайн библиотека Мои любимые книги</h1>
     </main>
+    <h2>Регистрация нового пользователя</h2>
+    <p>Здравствуйте, уважаемый посетитель нашего сайта!</p>
+    <p>
+      Регистрация на нашем сайте позволит Вам читать книги онлайн бесплатно. Вы
+      можете оставлять комментарии под прочитанной книгой, смотреть фильмы
+      снятых по сюжетам любимых книг и многое другое.
+    </p>
+    <form action="">
+      <fieldset>
+        <legend>Новый пользователь</legend>
+        <label for="firstname"
+          ><input required type="text" id="firstname" name="firstname" />
+          Имя</label
+        >
+        <label for="lastname"
+          ><input required type="text" id="lastname" name="lastname" />
+          Фамилия</label
+        >
+        <label for=""
+          ><input required inputmode="email" placeholder="email value" />
+          Почта</label
+        >
+        <label for=""
+          ><input required inputmode="tel" placeholder="tel value" /> Номер
+          телефона</label
+        >
+        <label for="password">
+          <input required type="password" placeholder="password" required/>
+          Enter your Password</label>
+      </fieldset>
+      <h3>Дополнительные поля</h3>
+      <p>
+        Уважаемый пользователь в Ваш день рождение наша команда будет
+        предоставлять Вам дополнительные бонусы и предложения по улучению чтения
+        книг. Подробнее можно прочитать про услугу после регистрации на нашем
+        сайте, для этого нужно заполнить ниже предложенные дополнительные
+        информации
+      </p>
+      <fieldset>
+        <legend>Дополнительные поля</legend>
+        <label for=""><input required type="date" /> День рождения</label>
+        <label for="male"
+          ><input required type="radio" name="gender" />Male</label
+        >
+        <label for="female"
+          ><input required type="radio" name="gender" />Female</label
+        >
+      </fieldset>
+      <p>
+        Уважаемый пользователь на сайте книги предложены только для чтения.
+        Использование книг в других целях нарушают права автора, копирование,
+        использование цитат или указывание в других источниках согласовывается
+        не посредственно с автором.
+      </p>
+      <label for="yes"><input required type="checkbox" />Я согласен(на)</label>
 
-  <!--<h2>Login form</h2>
-    <form id="login-form" method="GET">
-      <input type="text" name="username">
+      <a href="page2.html">
+      <button class="btn btn-primary">Регистрироваться</button>
+  </a>
     </form>
-
-    <input type="text" name="surname" form="login-form">
-
-    <button type="submit" form="login-form">Login</button>
-  -->
-  
-  <!--<h2>HTML Table</h2>
-
-  <table>
-    <tr>
-      <th>Company</th>
-      <th>Contact</th>
-      <th>Country</th>
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Germany</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexico</td>
-    </tr>
-    <tr>
-      <td>Ernst Handel</td>
-      <td>Roland Mendel</td>
-      <td>Austria</td>
-    </tr>
-    <tr>
-      <td>Island Trading</td>
-      <td>Helen Bennett</td>
-      <td>UK</td>
-    </tr>
-    <tr>
-      <td>Laughing Bacchus Winecellars</td>
-      <td>Yoshi Tannamuri</td>
-      <td>Canada</td>
-    </tr>
-    <tr>
-      <td>Magazzini Alimentari Riuniti</td>
-      <td>Giovanni Rovelli</td>
-      <td>Italy</td>
-    </tr>
-  </table>
--->
-<!--
-    <ul >
-      <li>first</li>
-      <li>second</li>
-      <li>therd</li>
-    </ul>
-    <ul >
-      <li>first</li>
-      <li>second</li>
-      <li>
-        <ul>
-          <li>first</li>
-          <li>second</li>
-          <li>therd</li>
-        </ul>
-      </li>
-    </ul>
-    <ol type="A">
-      <li>first</li>
-      <li>second</li>
-      <li>therd</li>
-    </ol>
-      <ol type="i">
-      <li>first</li>
-      <li>second</li>
-      <li>therd</li>
-    </ol>
-    <ol type="a">
-      <li>first</li>
-      <li>second</li>
-      <li>therd</li>
-    </ol>
-    <h2>A Description List</h2>
-
-<dl>
-  <dt>Coffee</dt>
-  <dd>- black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>- white cold drink</dd>
-</dl>
--->
-
+    <footer>
+      <p>
+        © 2022 - электронная библиотека в которой можно читать онлайн книги
+        бесплатно. Все материалы взяты из открытых источников и представлены
+        исключительно в ознакомительных целях. Все права на книги принадлежат их
+        авторам и издательствам.
+      </p>
+    </footer>
   </body>
 </html>
