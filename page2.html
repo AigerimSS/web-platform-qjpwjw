@@ -9,7 +9,7 @@
   </head>
   <body>
   <nav>
-  <a href="./register.html">Регистарция</a>
+  <a href="./index.html">Регистарция</a>
   <a href="page2.html" aria-current="page2">Вход</a>
 </nav>
     <main>
@@ -18,19 +18,13 @@
 <h2>Уважаемый посетитель нашего сайта!</h2> 
 <p>Здравствуйте, уважаемый посетитель нашего сайта!</p>
 <p>Что бы продолжить чтение Вашей любимой книги, Войдите в систему или Зарегистрируйтесь как новый пользователь.</p>
-<form id="login-form" method="GET">
+<form id="login-form" action="./page3.html" method="GET">
     <fieldset>
         <legend>Войти в систему</legend>
         <label for=""><input required inputmode="email" placeholder="email value" name="mail">Почта</label>
-        <label><input required inputmode type="text" id="password" pl> Пароль</label>  
-        <a href="page3.html" aria-current="page3"
-            class="btn btn-primary"></a>
-            <button class="btn btn-primary">Enter</button>
-                
-            </a>
-    <a href="http://127.0.0.1:5500/lecture-2/register.html">
-    <button class="btn btn-primary">Регистрироваться</button>
-</a>
+        <label for="password"> <input required inputmode type="text" id="password" name="password">Пароль</label>  
+        <button type="submit"> Вход </button>
+    
     </fieldset>
 </form>
 <footer>
